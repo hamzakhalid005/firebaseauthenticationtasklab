@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".insertdata">
+
+
+
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/imageNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:hint="Enter Image Name Here"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+
+
+    <TextView
+        android:id="@+id/textgallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageNameET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="Select An Image To Upload"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageToUploadIV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/imageNameET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/imageUploadingBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageToUploadIV"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="Upload Image"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageUploadingBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="BACK"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>

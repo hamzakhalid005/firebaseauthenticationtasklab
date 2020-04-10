@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".download_page">
+
+    <TextView
+        android:id="@+id/textgallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageNameET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="Image To Be Displayed Here"
+
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/imageNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:hint="Enter Image Name Here"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="5dp"
+
+
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageToDownloadIV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/imageNameET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/imageDownloadBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageToDownloadIV"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+
+        android:text="Download Image"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/backbt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageDownloadBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+
+        android:text="BACK "
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
